@@ -10,20 +10,19 @@ config = {
 arguments = [
     {
         "label": "APY greater than",
-        "tip": "年化收益率大于",
+        "hint": "年化收益率大于",
         "key": "apy>",
         "type": "number",
-        "default": 1,
+        "value": 1,
     },
     {
         "label": "Volatility greater than",
-        "tip": "APY波动变化大于",
+        "hint": "APY波动变化大于",
         "key": "vol>",
         "type": "number",
-        "default": 0,
+        "value": 0,
     },
 ]
-# argument item format: {"key": str, "type": str, "default": any, "limit": str}
 # type 可选: string, number, time, datetime
 
 
