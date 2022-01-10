@@ -7,23 +7,20 @@ config = {
     "timeout": 30,  # Unit: Second. Options: 30, 60, 120, 180
 }
 # script argument options
-arguments = [
-    {
-        "label": "APY greater than",
-        "hint": "年化收益率大于",
-        "key": "apy>",
+arguments = {
+    "apy>": {
+        "label": "年化收益率大于",
         "type": "number",
-        "value": 1,
+        "value": 1,  # default
+        "hint": "年收益率超过此阈值的资产",
     },
-    {
-        "label": "Volatility greater than",
-        "hint": "APY波动变化大于",
-        "key": "vol>",
+    "vol>": {
+        "label": "APY波动大于",
         "type": "number",
-        "value": 0,
+        "value": 0,  # default
+        "hint": "资产年收益率（距上次推送后）的变化幅度",
     },
-]
-# type 可选: string, number, time, datetime
+}
 
 
 # ========== Program  ==========
